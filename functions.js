@@ -40,7 +40,6 @@ function total(clients) {
 
 
 
-
 //info function
 function info(index) {
     const client = clients.find((client) => {
