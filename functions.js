@@ -1,11 +1,11 @@
 //list function
 function list(clients) {
     const listItems = clients.map((client) => `
-      <div class="list-group-item" data-index="${client.index}">
-        ${client.name}
-       ${client.balance}
-      </div>
-    `);
+    <li class="list-group-item d-flex justify-content-between" data-index="${client.index}">
+      ${client.name}
+      <strong>$ ${client.balance}</strong>
+    </li>
+  `);
 
     return listItems.join('');
 }
@@ -37,7 +37,6 @@ function total(clients) {
 
     return totalBalance;
 }
-
 
 
 
